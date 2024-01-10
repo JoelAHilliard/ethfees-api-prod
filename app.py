@@ -10,7 +10,7 @@ app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-port = os.getenv("PORT", 8070)
+port = 8000
 
 @app.route('/', methods=['Get'])
 @cross_origin()
